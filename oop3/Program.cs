@@ -99,3 +99,34 @@ public class Manager : Employee
     }
 }
 #endregion
+
+#region 5
+
+
+// a) 
+public class BaseClass
+{
+    public virtual void DisplayMessage()
+    {
+        Console.WriteLine("Message from BaseClass");
+    }
+}
+
+// b) 
+public class DerivedClass1 : BaseClass
+{
+    public override void DisplayMessage()
+    {
+        Console.WriteLine("Message from DerivedClass1");
+    }
+}
+
+// c) 
+public class DerivedClass2 : BaseClass
+{
+    public new void DisplayMessage()
+    {
+        Console.WriteLine("Message from DerivedClass2");
+    }
+}
+#endregion
