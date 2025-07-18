@@ -14,6 +14,7 @@ internal class Program
     }
 }
 
+#region 1
 public class Calculator
 {
     public int Add(int a, int b)
@@ -29,3 +30,4 @@ public class Calculator
         return a + b;
     }
 }
+#endregion  
