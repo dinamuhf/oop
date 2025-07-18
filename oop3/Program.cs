@@ -55,3 +55,29 @@ public class Rectangle
     }
 }
 #endregion
+
+#region 3
+public class ComplexNumber
+{
+    public double Real { get; set; }
+    public double Imaginary { get; set; }
+
+    public ComplexNumber(double real, double imaginary)
+    {
+        Real = real;
+        Imaginary = imaginary;
+    }
+    public static ComplexNumber operator +(ComplexNumber a, ComplexNumber b)
+    {
+        return new ComplexNumber(a.Real + b.Real, a.Imaginary + b.Imaginary);
+    }
+    public static ComplexNumber operator -(ComplexNumber a, ComplexNumber b)
+    {
+        return new ComplexNumber(a.Real - b.Real, a.Imaginary - b.Imaginary);
+    }
+    public override string ToString()
+    {
+        return $"{Real} + {Imaginary}i";
+    }
+}
+#endregion
